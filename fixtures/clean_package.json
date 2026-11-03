@@ -1,0 +1,59 @@
+{
+  "package_id": "PKG-FIXTURE-CFM56-CLEAN",
+  "part_number": "322-049-204-0",
+  "serial_number": "SN-88210",
+  "description": "BUSHING SHRD (IGV)",
+  "is_life_limited": true,
+  "life_limit_cycles": 20000,
+  "life_limit_hours": 50000.0,
+  "documents": [
+    {
+      "document_id": "DOC-01-REMOVAL",
+      "doc_type": "REMOVAL_TAG",
+      "extracted_date": "2026-01-10",
+      "part_number": "322-049-204-0",
+      "serial_number": "SN-88210",
+      "removal_tag": {
+        "document_id": "DOC-01-REMOVAL",
+        "tag_number": "TAG-101",
+        "date": "2026-01-10",
+        "removing_organization": "Delta TechOps",
+        "part_number": "322-049-204-0",
+        "serial_number": "SN-88210",
+        "reason_for_removal": "Shop visit",
+        "part_hours_tsn": 10000.0,
+        "part_cycles_csn": 4000,
+        "inspector_name": "T. Jones"
+      }
+    },
+    {
+      "document_id": "DOC-02-8130",
+      "doc_type": "FORM_8130_3",
+      "extracted_date": "2026-02-01",
+      "part_number": "322-049-204-0",
+      "serial_number": "SN-88210",
+      "form_8130": {
+        "document_id": "DOC-02-8130",
+        "block_1_country": "USA / FAA",
+        "block_2_org_name_address": "StandardAero San Antonio",
+        "block_3_form_tracking_no=": "SA-2026-001",
+        "block_4_org_cert_no": "CRS 8SDR091K",
+        "block_5_work_order": "WO-5512",
+        "block_7_description": "BUSHING SHRD (IGV)",
+        "block_8_part_number": "322-049-204-0",
+        "block_10_quantity": 1,
+        "block_11_status": "OVERHAULED",
+        "block_12_remarks": "Overhauled. TSN: 10000.0, CSN: 4000",
+        "block_14a_part_43_cert": true,
+        "block_14b_signature": "D. Morgan",
+        "block_14c_approval_no": "CRS 8SDR091K",
+        "block_14d_name": "Dan Morgan",
+        "block_14e_date": "2026-02-01",
+        "block_13_shaded": true,
+        "block_14_shaded": false,
+        "user_installer_responsibilities_boilerplate_present": true,
+        "serial_number": "SN-88210"
+      }
+    }
+  ]
+}

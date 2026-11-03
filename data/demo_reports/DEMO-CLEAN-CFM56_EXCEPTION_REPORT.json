@@ -1,0 +1,73 @@
+{
+  "audit_id": "AUD-DEMO-CLEAN-CFM56-1793732979",
+  "package_name": "DEMO-CLEAN-CFM56",
+  "timestamp": "2026-11-03T19:09:39.762548+00:00",
+  "auditor": "USM Trace Exception-Audit Desk v1.0",
+  "part_number": "322-049-204-0",
+  "serial_number": "SN-CFM-99100",
+  "part_description": "BUSHING SHRD (IGV)",
+  "is_life_limited": true,
+  "life_limit_cycles": 20000,
+  "life_limit_hours": 50000.0,
+  "current_tsn": 14200.0,
+  "current_csn": 6100,
+  "remaining_cycles": 13900,
+  "total_documents_analyzed": 4,
+  "audit_score": 100.0,
+  "disposition": "PASS",
+  "exceptions": [],
+  "custody_chain_summary": [
+    {
+      "date": "2026-01-15",
+      "document_id": "DOC-01-REMOVAL-TAG",
+      "doc_type": "REMOVAL_TAG",
+      "entity": "United Airlines Maintenance SFO",
+      "flight_hours_tsn": 14200.0,
+      "flight_cycles_csn": 6100,
+      "summary": "Removal Tag (Reason: Engine scheduled teardown)"
+    },
+    {
+      "date": "2026-02-01",
+      "document_id": "DOC-02-BOS-AIRLINE",
+      "doc_type": "BILL_OF_SALE",
+      "entity": "United Airlines Asset Management -> AeroCore Material LLC",
+      "flight_hours_tsn": null,
+      "flight_cycles_csn": null,
+      "summary": "Bill of Sale (Title Transfer)"
+    },
+    {
+      "date": "2026-02-20",
+      "document_id": "DOC-03-WORK-ORDER",
+      "doc_type": "WORK_ORDER",
+      "entity": "Delta TechOps MRO",
+      "flight_hours_tsn": 14200.0,
+      "flight_cycles_csn": 6100,
+      "summary": "Work Order (Overhaul per CFM56 CMM 72-21-01. NDI FPI inspected clean.)"
+    },
+    {
+      "date": "2026-03-05",
+      "document_id": "DOC-04-FAA-8130-3",
+      "doc_type": "FORM_8130_3",
+      "entity": "Delta TechOps, Atlanta GA 30320",
+      "flight_hours_tsn": null,
+      "flight_cycles_csn": null,
+      "summary": "8130-3 (OVERHAULED)"
+    }
+  ],
+  "rule_summary": {
+    "by_severity": {
+      "CRITICAL": 0,
+      "MAJOR": 0,
+      "MINOR": 0,
+      "WARNING": 0,
+      "INFO": 0
+    },
+    "by_category": {
+      "COMPLETENESS_8130": 0,
+      "SUP_FORGERY_RED_FLAG": 0,
+      "CHAIN_OF_CUSTODY": 0,
+      "STATUS_TERM_LEGALITY": 0,
+      "DATA_DISCREPANCY": 0
+    }
+  }
+}

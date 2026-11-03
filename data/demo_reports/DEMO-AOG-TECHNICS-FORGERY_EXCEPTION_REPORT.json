@@ -1,0 +1,103 @@
+{
+  "audit_id": "AUD-DEMO-AOG-TECHNICS-FORGERY-1793732979",
+  "package_name": "DEMO-AOG-TECHNICS-FORGERY",
+  "timestamp": "2026-11-03T19:09:39.775812+00:00",
+  "auditor": "USM Trace Exception-Audit Desk v1.0",
+  "part_number": "322-049-204-0",
+  "serial_number": "SN-FORGED-001",
+  "part_description": "bushing",
+  "is_life_limited": false,
+  "life_limit_cycles": null,
+  "life_limit_hours": null,
+  "current_tsn": null,
+  "current_csn": null,
+  "remaining_cycles": null,
+  "total_documents_analyzed": 1,
+  "audit_score": 0.0,
+  "disposition": "REJECT_SUP_ALERT",
+  "exceptions": [
+    {
+      "exception_id": "EXP-SUP-BLRPLATE-DOC-FORGED-8130",
+      "rule_id": "R-SUP-01-BOILERPLATE",
+      "rule_name": "Missing Mandatory Installer Responsibility Boilerplate",
+      "category": "SUP_FORGERY_RED_FLAG",
+      "severity": "CRITICAL",
+      "document_id": "DOC-FORGED-8130",
+      "document_type": "Form 8130-3",
+      "block_ref": "Boilerplate Notice",
+      "finding": "Document lacks mandatory installer/user responsibility disclaimer on face or reverse.",
+      "regulatory_ref": "FAA Order 8130.21J para 3-3 & Appendix A / FAA SUP Notice (AOG Technics)",
+      "details": "AOG Technics forged release forms systematically omitted or truncated the mandatory installer responsibility legal notice. Unapproved template detected.",
+      "recommendation": "QUARANTINE PART IMMEDIATELY. Suspected Unapproved Part (SUP) alert; verify airworthiness tag directly with issuing CRS or FAA FSDO."
+    },
+    {
+      "exception_id": "EXP-SUP-BLK13-NOTSHADED-DOC-FORGED-8130",
+      "rule_id": "R-SUP-02-SHADING",
+      "rule_name": "Opposing Release Box Block 13 Not Shaded for Maintenance Release",
+      "category": "SUP_FORGERY_RED_FLAG",
+      "severity": "CRITICAL",
+      "document_id": "DOC-FORGED-8130",
+      "document_type": "Form 8130-3",
+      "block_ref": "Block 13",
+      "finding": "Block 13 is not shaded/grayed out despite maintenance release executed in Block 14.",
+      "regulatory_ref": "FAA Order 8130.21J para 3-7(f) / FAA SUP Advisory",
+      "details": "Failure to shade unused Block 13 allows fraudulent post-release endorsement.",
+      "recommendation": "Hold delivery. Require issuing repair station to provide properly formatted release."
+    },
+    {
+      "exception_id": "EXP-SUP-NOMENCLATURE-DOC-FORGED-8130",
+      "rule_id": "R-SUP-03-NOMENCLATURE",
+      "rule_name": "OEM Nomenclature Mismatch - Generic AOG Technics Red Flag",
+      "category": "SUP_FORGERY_RED_FLAG",
+      "severity": "MAJOR",
+      "document_id": "DOC-FORGED-8130",
+      "document_type": "Form 8130-3",
+      "block_ref": "Block 7",
+      "finding": "Block 7 description 'bushing' does not match official CFM International IPC nomenclature 'BUSHING SHRD (IGV)'.",
+      "regulatory_ref": "FAA SUP Notice 2023 / CFM International Advisory Notice",
+      "details": "Part number 322-049-204-0 corresponds to official OEM nomenclature 'BUSHING SHRD (IGV)'. Generic colloquial term 'bushing' matches forged tag profile.",
+      "recommendation": "Quarantine article. Cross-examine illustrated parts catalog and demand OEM trace."
+    },
+    {
+      "exception_id": "EXP-SUP-CERT-MISMATCH-14-DOC-FORGED-8130",
+      "rule_id": "R-SUP-04-CERT-MISMATCH",
+      "rule_name": "Certificate Number Mismatch: Block 4 vs Block 14c",
+      "category": "SUP_FORGERY_RED_FLAG",
+      "severity": "CRITICAL",
+      "document_id": "DOC-FORGED-8130",
+      "document_type": "Form 8130-3",
+      "block_ref": "Block 4 & Block 14c",
+      "finding": "Issuing organization certificate in Block 4 ('CRS FAKE123A') does not match Block 14c certificate ('CRS MISMATCH999B').",
+      "regulatory_ref": "FAA Order 8130.21J para 3-7(d) / AOG Technics SUP Precedent",
+      "details": "In maintenance releases, Block 14c MUST record the certificate number of the organization named in Block 2 and Block 4. Mismatch indicates unauthorized or fraudulent signature.",
+      "recommendation": "QUARANTINE. High probability of fraudulent airworthiness approval. File FAA Form 8120-11 SUP report."
+    }
+  ],
+  "custody_chain_summary": [
+    {
+      "date": "2026-02-15",
+      "document_id": "DOC-FORGED-8130",
+      "doc_type": "FORM_8130_3",
+      "entity": "AOG Technics Ltd / Fictitious Agency",
+      "flight_hours_tsn": null,
+      "flight_cycles_csn": null,
+      "summary": "8130-3 (OVERHAULED)"
+    }
+  ],
+  "rule_summary": {
+    "by_severity": {
+      "CRITICAL": 3,
+      "MAJOR": 1,
+      "MINOR": 0,
+      "WARNING": 0,
+      "INFO": 0
+    },
+    "by_category": {
+      "COMPLETENESS_8130": 0,
+      "SUP_FORGERY_RED_FLAG": 4,
+      "CHAIN_OF_CUSTODY": 0,
+      "STATUS_TERM_LEGALITY": 0,
+      "DATA_DISCREPANCY": 0
+    }
+  }
+}
